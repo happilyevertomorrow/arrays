@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>Functions and Arrays</title>
+<script language="Javascript" type="text/javascript"> 
+<!--
+function Logon ()
+{ 
+  var userID
+  var password
+  var valid
+  userID= prompt ('Enter user ID','')
+  password= prompt ('Enter password','')
+  valid= ValidateLogon (userID, password)
+  if (valid == true)
+  {
+    alert ('Valid Logon')
+  }
+  else      
+  {
+    alert ('Invalid Logon')
+  }
+}
+function ValidateLogon (id,pwd)
+{  
+  var ReturnValue
+  if (id == 'Thanksgiving' && pwd == 'turkey')
+  {
+    ReturnValue = true
+  }
+  else
+  {
+    ReturnValue = false
+  }
+  return ReturnValue
+}
+
+-->
+</script>
+</head>
+<body>
+<script language="Javascript" type="text/javascript"> 
+<!--
+   Logon ()
+  -->
+  </script>
+ </body> 
+</html> 
+  
+
+<body style="font-size:50pt;color:white;background-color:orange;font-family:Harrington">Joanna Riascos<br />
+<br />
+</body>
+</html>
+ 
+<img src= "christmas-snow-scene_422_16518 (1).jpg" alt="width="300" height="300" style="float:left">
+<img src= "victorian-thanksgiving.jpg" alt="width="300" height="300" style="float:right">
+</body>
+</html>
+ 
+ 
+<body>  
+<body onload= "WelcomeMessage()">  
+<script language="Javascript" type="text/javascript"> 
+<!--
+function WelcomeMessage ()
+{
+  alert('Why, hello there!')
+}
+ 
+var holidays = new Array()
+holidays[0] = 'Thanksgiving'
+holidays[1] = 'Christmas'
+holidays[2] = 'Halloween'
+holidays[3] = 'Veterans Day'
+for (var i = 0; i<holidays.length;i++)
+{
+  document.write(holidays[i] + '<br>')
+}
+
+
+</script>
+</body>
+</html>
